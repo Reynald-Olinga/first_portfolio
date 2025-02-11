@@ -1,4 +1,4 @@
-/*let words = document.querySelectorAll(".word")
+let words = document.querySelectorAll(".word")
 words.forEach((word)=>{
     let letters = word.textContent.split("")
     word.textContent = "";
@@ -16,7 +16,7 @@ words[currentWordIndex].style.opacity = "1";
 
 const changeText = ()=>{
     let currentWord = words[currentWordIndex]
-    let nextWord = currentWordIndex === maxWord ? words[0] : words[currentWordIndex + 1]
+    let nextWord = currentWordIndex === nextWord ? words[0] : words[currentWordIndex + 1]
 
     Array.from(currentWord.children).forEach((letter,i)=>{
         setTimeout(()=>{
@@ -37,7 +37,7 @@ const changeText = ()=>{
 }
 
 changeText();
-setInterval(changeText,3000)*/
+setInterval(changeText,3000)
 
 
 ////////// circle skills /////////////////:
